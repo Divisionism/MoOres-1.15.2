@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "divisionismmoore:copper_block"
+    }
+  ],
+  "result": {
+    "item": "divisionismmoore:copper_ingot",
+    "count": 9
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "divisionismmoore:crystal_meth_ore_block"
+  },
+  "result": "divisionismmoore:impure_crystal_meth",
+  "experience": 0.7,
+  "cookingtime": 100
+}

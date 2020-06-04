@@ -1,0 +1,48 @@
+{
+  "item.divisionismmoore.uranium_ingot": "\u00A7eΜετάλευμα Ουρανίου",
+  "item.divisionismmoore.ingot": "\u00A74I\u00A7en\u00A7ag\u00A7bo\u00A7dt",
+  "item.divisionismmoore.crystal_meth": "\u00A7bΚρυσταλλική μεθ",
+  "item.divisionismmoore.impure_crystal_meth": "\u00A7eΒρώμικη κρυσταλλική μεθ",
+  "item.divisionismmoore.copper_ingot": "Ράβδος χαλκού",
+  "item.divisionismmoore.steel_ingot": "Ράβδος ατσαλιού",
+  "item.divisionismmoore.crystal_meth_powder": "\u00A7bΣκόνη κρυσταλλικής μεθ",
+  "item.divisionismmoore.impure_crystal_meth_powder": "\u00A7eΣκόνη βρώμικης κρυσταλλικής μεθ",
+  "item.divisionismmoore.antidote": "Αντίδοτο",
+  "item.divisionismmoore.methamphetamine_silica": "\u00A7b2-Methamphetamine  β-D-fructofuranosyl α-D-glucopyranoside, (2R,3R,4S,5S,6R)-2-[(2S,3S,4S,5R)-3,4-dihydroxy-2,5-bis(hydroxymethyl)oxolan-2-yl]oxy-6-(hydroxymethyl)oxane-3,4,5-triol 3-Potassium Nitrate",
+  "item.divisionismmoore.credit_card": "Η πιστωτικη της μανούλας",
+
+  "item.divisionismmoore.copper_sword": "Χάλκινο σπαθί",
+  "item.divisionismmoore.copper_pickaxe": "Χάλκινη αξίνα",
+  "item.divisionismmoore.copper_axe": "Χάλκινο τσεκούρι",
+  "item.divisionismmoore.copper_shovel": "Χάλκινο φτυάρι",
+  "item.divisionismmoore.copper_hoe": "Χάλκινη τσάπα",
+  "item.divisionismmoore.steel_pickaxe": "Ατσαλένια αξίνα",
+  "item.divisionismmoore.steel_sword": "Ατσαλένιο σπαθί",
+  "item.divisionismmoore.steel_axe": "Ατσαλένιο τσεκούρι",
+  "item.divisionismmoore.steel_shovel": "Ατσαλένιο φτυάρι",
+  "item.divisionismmoore.steel_hoe": "Ατσαλένια τσάπα",
+
+  "item.divisionismmoore.copper_chestplate": "Χάλκινος Θώρακας",
+  "item.divisionismmoore.copper_leggings": "Χάλκινες περικνημίδες",
+  "item.divisionismmoore.copper_helmet": "Χάλκινο κράνος",
+  "item.divisionismmoore.copper_boots": "Χάλκινες μπότες",
+
+  "block.divisionismmoore.uranium_block": "\u00A7eΚύβος Ουρανίου",
+  "block.divisionismmoore.crystal_meth_ore_block": "\u00A7bΜετάλλευμα κρυσταλλικής μεθ",
+  "block.divisionismmoore.uranium_ore_block": "Μετάλλευμα ουρανίου",
+  "block.divisionismmoore.crate": "Κιβώτιο",
+  "block.divisionismmoore.copper_ore_block": "Μετάλλευμα χαλκού",
+  "block.divisionismmoore.copper_block": "Κύβος Χαλκού",
+
+  "container.crate": "Κιβώτιο",
+
+  "itemGroup.ingot_tab": "\u00A7eMo'Ore ράβδοι",
+  "itemGroup.crystal_tab": "\u00A7bMo'Ore κρύσταλλοι",
+  "itemGroup.blocks_tab": "Mo'Ore Κουτάκια",
+  "itemGroup.tools_tab": "Mo'Ore Εργαλεία",
+  "itemGroup.consumables_tab": "Mo'Ore Καταναλώσημα",
+
+  "biome.divisionismmoore.wastelands_biome": "Wastelands",
+  "biome.divisionismmoore.wastelands_desert": "Wastelands Desert",
+  "biome.divisionismmoore.mountain_range": "Οροσειρές"
+}

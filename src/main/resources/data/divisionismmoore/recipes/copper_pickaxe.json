@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    " a ",
+    " a "
+  ],
+  "key": {
+    "x": {
+      "item": "divisionismmoore:copper_ingot"
+    },
+    "a": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "divisionismmoore:copper_pickaxe"
+  }
+}

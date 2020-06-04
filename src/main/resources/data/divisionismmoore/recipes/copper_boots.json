@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "divisionismmoore:copper_ingot"
+    }
+  },
+  "result": {
+    "item": "divisionismmoore:copper_boots",
+    "count": 1
+  }
+}

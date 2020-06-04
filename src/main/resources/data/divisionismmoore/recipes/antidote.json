@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "   ",
+    " xa",
+    " b "
+  ],
+  "key": {
+    "x": {
+      "item": "divisionismmoore:crystal_meth_powder"
+    },
+    "a": {
+      "item": "minecraft:sugar"
+    },
+    "b": {
+      "item": "minecraft:potion"
+    }
+  },
+  "result":
+  {
+    "item": "divisionismmoore:antidote"
+  }
+}

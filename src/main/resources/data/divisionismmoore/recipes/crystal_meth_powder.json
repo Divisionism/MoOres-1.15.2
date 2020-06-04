@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "divisionismmoore:crystal_meth"
+    }
+  ],
+  "result": {
+    "item": "divisionismmoore:crystal_meth_powder",
+    "count": 1
+  }
+}

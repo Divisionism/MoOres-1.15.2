@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " x ",
+    " a ",
+    " a "
+  ],
+  "key": {
+    "x": {
+      "item": "divisionismmoore:steel_ingot"
+    },
+    "a": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "divisionismmoore:steel_shovel"
+  }
+}

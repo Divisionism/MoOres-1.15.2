@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "divisionismmoore:blocks/crystal_meth_ore_block"
+  }
+}

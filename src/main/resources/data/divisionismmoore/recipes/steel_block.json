@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "key": {
+    "x": {
+      "item": "divisionismmoore:steel_ingot"
+    }
+  },
+  "result":
+  {
+    "item": "divisionismmoore:steel_block"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "divisionismmoore:items/impure_crystal_meth_powder"
+  }
+}
