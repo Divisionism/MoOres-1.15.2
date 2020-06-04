@@ -1,7 +1,7 @@
 package com.Divisionism.MoOres.items;
 
 import com.Divisionism.MoOres.tabs.CreativeTabs;
-import com.Divisionism.MoOres.util.RegistryHandler;
+//import com.Divisionism.MoOres.util.RegistryHandler;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
