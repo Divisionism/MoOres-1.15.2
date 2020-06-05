@@ -27,6 +27,11 @@
   "item.divisionismmoore.steel_axe": "Steel Axe",
   "item.divisionismmoore.steel_shovel": "Steel Shovel",
   "item.divisionismmoore.steel_hoe": "Steel Hoe",
+  "item.divisionismmoore.aluminium_sword": "Aluminium Sword",
+  "item.divisionismmoore.aluminium_pickaxe": "Aluminium Pickaxe",
+  "item.divisionismmoore.aluminium_axe": "Aluminium Axe",
+  "item.divisionismmoore.aluminium_shovel": "Aluminium Shovel",
+  "item.divisionismmoore.aluminium_hoe": "Aluminium Hoe",
   "item.divisionismmoore.diracium_sword": "Diracium Sword",
   "item.divisionismmoore.diracium_pickaxe": "Diracium Pickaxe",
 
@@ -38,6 +43,10 @@
   "item.divisionismmoore.steel_chestplate": "Steel Chestplate",
   "item.divisionismmoore.steel_leggings": "Steel Leggings",
   "item.divisionismmoore.steel_boots": "Steel Boots",
+  "item.divisionismmoore.aluminium_helmet": "Aluminium Helmet",
+  "item.divisionismmoore.aluminium_chestplate": "Aluminium Chestplate",
+  "item.divisionismmoore.aluminium_leggings": "Aluminium Leggings",
+  "item.divisionismmoore.aluminium_boots": "Aluminium Boots",
 
   "block.divisionismmoore.crystal_meth_ore_block": "\u00A7bCrystal Meth Ore",
   "block.divisionismmoore.crate": "Crate",

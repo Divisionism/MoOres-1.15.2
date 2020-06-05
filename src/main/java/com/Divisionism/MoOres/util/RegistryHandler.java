@@ -87,13 +87,13 @@ public class RegistryHandler {
     public static final RegistryObject<Item> STEEL_AXE = ITEMS.register("steel_axe", SteelAxe::new);
     public static final RegistryObject<Item> STEEL_SHOVEL = ITEMS.register("steel_shovel", SteelShovel::new);
     public static final RegistryObject<Item> STEEL_HOE = ITEMS.register("steel_hoe", SteelHoe::new);
-    public static final RegistryObject<Item> DIRACIUM_SWORD = ITEMS.register("diracium_sword", DiraciumSword::new);
-    public static final RegistryObject<Item> DIRACIUM_PICKAXE = ITEMS.register("diracium_pickaxe", DiraciumPickaxe::new);
     public static final RegistryObject<Item> ALUMINIUM_SWORD = ITEMS.register("aluminium_sword", AluminiumSword::new);
     public static final RegistryObject<Item> ALUMINIUM_PICKAXE = ITEMS.register("aluminium_pickaxe", AluminiumPickaxe::new);
     public static final RegistryObject<Item> ALUMINIUM_AXE = ITEMS.register("aluminium_axe", AluminiumAxe::new);
     public static final RegistryObject<Item> ALUMINIUM_SHOVEL = ITEMS.register("aluminium_shovel", AluminiumShovel::new);
     public static final RegistryObject<Item> ALUMINIUM_HOE = ITEMS.register("aluminium_hoe", AluminiumHoe::new);
+    public static final RegistryObject<Item> DIRACIUM_SWORD = ITEMS.register("diracium_sword", DiraciumSword::new);
+    public static final RegistryObject<Item> DIRACIUM_PICKAXE = ITEMS.register("diracium_pickaxe", DiraciumPickaxe::new);
 
     //Armor
     public static final RegistryObject<Item> COPPER_HELMET = ITEMS.register("copper_helmet", CopperHelmet::new);
@@ -104,4 +104,8 @@ public class RegistryHandler {
     public static final RegistryObject<Item> STEEL_CHESTPLATE = ITEMS.register("steel_chestplate", SteelChestplate::new);
     public static final RegistryObject<Item> STEEL_LEGGINGS = ITEMS.register("steel_leggings", SteelLeggings::new);
     public static final RegistryObject<Item> STEEL_BOOTS = ITEMS.register("steel_boots", SteelBoots::new);
+    public static final RegistryObject<Item> ALUMINIUM_HELMET = ITEMS.register("aluminium_helmet", AluminiumHelmet::new);
+    public static final RegistryObject<Item> ALUMINIUM_CHESTPLATE = ITEMS.register("aluminium_chestplate", AluminiumChestplate::new);
+    public static final RegistryObject<Item> ALUMINIUM_LEGGINGS = ITEMS.register("aluminium_leggings", AluminiumLeggings::new);
+    public static final RegistryObject<Item> ALUMINIUM_BOOTS = ITEMS.register("aluminium_boots", AluminiumBoots::new);
 }

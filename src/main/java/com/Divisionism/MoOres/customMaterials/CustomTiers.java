@@ -18,6 +18,21 @@ public enum CustomTiers implements IItemTier {
     ALUMINIUM(2, 2000, 13.0f, 0.0f, 15, () -> {
         return Ingredient.fromItems(RegistryHandler.ALUMINIUM.get());
     }),
+    TITANIUM(3, 5000, 16.0f, 0.0f, 15, () -> {
+        return Ingredient.fromItems(RegistryHandler.TITANIUM.get());
+    }),
+    SILVER(3, 3000, 14.0f, 0.0f, 15, () -> {
+        return Ingredient.fromItems(RegistryHandler.SILVER.get());
+    }),
+    PLATINUM(3, 7000, 20.0f, 0.0f, 15, () -> {
+       return Ingredient.fromItems(RegistryHandler.PLATINUM.get());
+    }),
+    LEAD(3, 6000, 16.0f, 0.0f, 15, () -> {
+        return Ingredient.fromItems(RegistryHandler.LEAD.get());
+    }),
+    FARADIUM(4, 10000, 100.0f, 0.0f, 100, () -> {
+        return Ingredient.fromItems(RegistryHandler.FARADIUM.get());
+    }),
     DIRACIUM(5, 99999, 1000.0f, 0.0f, 50, () -> {
        return  Ingredient.fromItems(RegistryHandler.DIRACIUM.get());
     });
