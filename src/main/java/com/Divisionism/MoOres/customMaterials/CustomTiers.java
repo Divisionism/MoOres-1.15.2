@@ -15,6 +15,9 @@ public enum CustomTiers implements IItemTier {
     STEEL(2, 1000, 10.0f, 0.0f, 15, () -> {
         return Ingredient.fromItems(RegistryHandler.STEEL.get());
     }),
+    ALUMINIUM(2, 2000, 13.0f, 0.0f, 15, () -> {
+        return Ingredient.fromItems(RegistryHandler.ALUMINIUM.get());
+    }),
     DIRACIUM(5, 99999, 1000.0f, 0.0f, 50, () -> {
        return  Ingredient.fromItems(RegistryHandler.DIRACIUM.get());
     });

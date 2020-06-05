@@ -4,8 +4,10 @@ import com.Divisionism.MoOres.MoOres;
 import com.Divisionism.MoOres.blocks.*;
 import com.Divisionism.MoOres.items.*;
 import com.Divisionism.MoOres.objects.blocks.Crate;
+import com.Divisionism.MoOres.tileentity.crateContainerTileEntity;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
+import net.minecraft.tileentity.TileEntityType;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -15,6 +17,7 @@ public class RegistryHandler {
 
     public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, MoOres.MOD_ID);
     public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, MoOres.MOD_ID);
+    public static final DeferredRegister<TileEntityType<?>> TILE_ENTITY_TYPES = new DeferredRegister<>(ForgeRegistries.TILE_ENTITIES, MoOres.MOD_ID);
 
     public static void init() {
 
@@ -70,6 +73,9 @@ public class RegistryHandler {
     public static final RegistryObject<Item> FARADIUM_ORE_BLOCK_ITEM = ITEMS.register("faradium_ore_block", () -> new BlockItemBase(FARADIUM_ORE_BLOCK.get()));
     public static final RegistryObject<Item> DIRACIUM_ORE_BLOCK_ITEM = ITEMS.register("diracium_ore_block", () -> new BlockItemBase(DIRACIUM_ORE_BLOCK.get()));
 
+    //Tile Entities
+    public static final RegistryObject<TileEntityType<crateContainerTileEntity>> CRATE_TILE_ENTITY = TILE_ENTITY_TYPES.register("crate_tile", () -> TileEntityType.Builder.create(crateContainerTileEntity::new, CRATE.get()).build(null));
+
     //Tools
     public static final RegistryObject<Item> COPPER_PICKAXE = ITEMS.register("copper_pickaxe", CopperPickaxe::new);
     public static final RegistryObject<Item> COPPER_SWORD = ITEMS.register("copper_sword", CopperSword::new);
@@ -83,6 +89,11 @@ public class RegistryHandler {
     public static final RegistryObject<Item> STEEL_HOE = ITEMS.register("steel_hoe", SteelHoe::new);
     public static final RegistryObject<Item> DIRACIUM_SWORD = ITEMS.register("diracium_sword", DiraciumSword::new);
     public static final RegistryObject<Item> DIRACIUM_PICKAXE = ITEMS.register("diracium_pickaxe", DiraciumPickaxe::new);
+    public static final RegistryObject<Item> ALUMINIUM_SWORD = ITEMS.register("aluminium_sword", AluminiumSword::new);
+    public static final RegistryObject<Item> ALUMINIUM_PICKAXE = ITEMS.register("aluminium_pickaxe", AluminiumPickaxe::new);
+    public static final RegistryObject<Item> ALUMINIUM_AXE = ITEMS.register("aluminium_axe", AluminiumAxe::new);
+    public static final RegistryObject<Item> ALUMINIUM_SHOVEL = ITEMS.register("aluminium_shovel", AluminiumShovel::new);
+    public static final RegistryObject<Item> ALUMINIUM_HOE = ITEMS.register("aluminium_hoe", AluminiumHoe::new);
 
     //Armor
     public static final RegistryObject<Item> COPPER_HELMET = ITEMS.register("copper_helmet", CopperHelmet::new);

@@ -2,7 +2,7 @@ package com.Divisionism.MoOres.tileentity;
 
 import com.Divisionism.MoOres.container.crateContainer;
 import com.Divisionism.MoOres.objects.blocks.Crate;
-import com.Divisionism.MoOres.util.ModTileEntityTypes;
+import com.Divisionism.MoOres.util.RegistryHandler;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
@@ -26,7 +26,6 @@ import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandlerModifiable;
 import net.minecraftforge.items.wrapper.InvWrapper;
 
-import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
 public class crateContainerTileEntity extends LockableLootTileEntity {
@@ -41,7 +40,7 @@ public class crateContainerTileEntity extends LockableLootTileEntity {
     }
 
     public crateContainerTileEntity() {
-        this(ModTileEntityTypes.CRATE_TILE_ENTITY.get());
+        this(RegistryHandler.CRATE_TILE_ENTITY.get());
     }
 
     @Override

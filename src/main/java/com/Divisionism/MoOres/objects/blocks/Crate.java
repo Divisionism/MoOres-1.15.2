@@ -1,7 +1,7 @@
 package com.Divisionism.MoOres.objects.blocks;
 
 import com.Divisionism.MoOres.tileentity.crateContainerTileEntity;
-import com.Divisionism.MoOres.util.ModTileEntityTypes;
+import com.Divisionism.MoOres.util.RegistryHandler;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.SoundType;
@@ -48,7 +48,7 @@ public class Crate extends Block {
 
     @Override
     public TileEntity createTileEntity(BlockState state, IBlockReader world) {
-        return ModTileEntityTypes.CRATE_TILE_ENTITY.get().create();
+        return RegistryHandler.CRATE_TILE_ENTITY.get().create();
     }
 
     @Override
