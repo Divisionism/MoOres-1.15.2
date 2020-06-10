@@ -2,12 +2,17 @@ package com.Divisionism.MoOres.util;
 
 import com.Divisionism.MoOres.MoOres;
 import com.Divisionism.MoOres.blocks.*;
+//import com.Divisionism.MoOres.container.alloyContainer;
+//import com.Divisionism.MoOres.container.crateContainer;
 import com.Divisionism.MoOres.items.*;
-import com.Divisionism.MoOres.objects.blocks.Crate;
-import com.Divisionism.MoOres.tileentity.crateContainerTileEntity;
+//import com.Divisionism.MoOres.objects.blocks.Crate;
+//import com.Divisionism.MoOres.tileentity.alloyContainerTileEntity;
+//import com.Divisionism.MoOres.tileentity.crateContainerTileEntity;
 import net.minecraft.block.Block;
+import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.item.Item;
 import net.minecraft.tileentity.TileEntityType;
+//import net.minecraftforge.common.extensions.IForgeContainerType;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -18,6 +23,7 @@ public class RegistryHandler {
     public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, MoOres.MOD_ID);
     public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, MoOres.MOD_ID);
     public static final DeferredRegister<TileEntityType<?>> TILE_ENTITY_TYPES = new DeferredRegister<>(ForgeRegistries.TILE_ENTITIES, MoOres.MOD_ID);
+    public static final DeferredRegister<ContainerType<?>> CONTAINER_TYPES = new DeferredRegister<>(ForgeRegistries.CONTAINERS, MoOres.MOD_ID);
 
     public static void init() {
 
@@ -47,7 +53,7 @@ public class RegistryHandler {
     //Blocks
     public static final RegistryObject<Block> ORE_PROPERTIES = BLOCKS.register("ore_properties", ORE_PROPERTIES::new);
     public static final RegistryObject<Block> CRYSTAL_METH_ORE_BLOCK = BLOCKS.register("crystal_meth_ore_block", ORE_PROPERTIES::new);
-    public static final RegistryObject<Block> CRATE = BLOCKS.register("crate", Crate::new);
+    //public static final RegistryObject<Block> CRATE = BLOCKS.register("crate", Crate::new);
     public static final RegistryObject<Block> COPPER_ORE_BLOCK = BLOCKS.register("copper_ore_block", ORE_PROPERTIES::new);
     public static final RegistryObject<Block> COPPER_BLOCK = BLOCKS.register("copper_block", CopperBlock::new);
     public static final RegistryObject<Block> STEEL_BLOCK = BLOCKS.register("steel_block", SteelBlock::new);
@@ -58,10 +64,11 @@ public class RegistryHandler {
     public static final RegistryObject<Block> LEAD_ORE_BLOCK = BLOCKS.register("lead_ore_block", ORE_PROPERTIES::new);
     public static final RegistryObject<Block> FARADIUM_ORE_BLOCK = BLOCKS.register("faradium_ore_block", ORE_PROPERTIES::new);
     public static final RegistryObject<Block> DIRACIUM_ORE_BLOCK = BLOCKS.register("diracium_ore_block", ORE_PROPERTIES::new);
+    public static final RegistryObject<Block> ALLOY_FURNACE = BLOCKS.register("alloy_furnace", AlloyFurnace::new);
 
     //Block Items
     public static final RegistryObject<Item> CRYSTAL_METH_ORE_BLOCK_ITEM = ITEMS.register("crystal_meth_ore_block", () -> new BlockItemBase(CRYSTAL_METH_ORE_BLOCK.get()));
-    public static final RegistryObject<Item> CRATE_ITEM = ITEMS.register("crate", () -> new BlockItemBase(CRATE.get()));
+    //public static final RegistryObject<Item> CRATE_ITEM = ITEMS.register("crate", () -> new BlockItemBase(CRATE.get()));
     public static final RegistryObject<Item> COPPER_ORE_BLOCK_ITEM = ITEMS.register("copper_ore_block", () -> new BlockItemBase(COPPER_ORE_BLOCK.get()));
     public static final RegistryObject<Item> COPPER_BLOCK_ITEM = ITEMS.register("copper_block", () -> new BlockItemBase(COPPER_BLOCK.get()));
     public static final RegistryObject<Item> STEEL_BLOCK_ITEM = ITEMS.register("steel_block", () -> new BlockItemBase(STEEL_BLOCK.get()));
@@ -72,9 +79,15 @@ public class RegistryHandler {
     public static final RegistryObject<Item> LEAD_ORE_BLOCK_ITEM = ITEMS.register("lead_ore_block", () -> new BlockItemBase(LEAD_ORE_BLOCK.get()));
     public static final RegistryObject<Item> FARADIUM_ORE_BLOCK_ITEM = ITEMS.register("faradium_ore_block", () -> new BlockItemBase(FARADIUM_ORE_BLOCK.get()));
     public static final RegistryObject<Item> DIRACIUM_ORE_BLOCK_ITEM = ITEMS.register("diracium_ore_block", () -> new BlockItemBase(DIRACIUM_ORE_BLOCK.get()));
+    public static final RegistryObject<Item> ALLOY_FURNACE_BLOCK_ITEM = ITEMS.register("alloy_furnace", () -> new BlockItemBase(ALLOY_FURNACE.get()));
+
+    //Containers
+    //public static RegistryObject<ContainerType<crateContainer>> CRATE_CONTAINER = CONTAINER_TYPES.register("crate_container", () -> IForgeContainerType.create(crateContainer::new));
+    //public static RegistryObject<ContainerType<alloyContainer>> ALLOY_CONTAINER = CONTAINER_TYPES.register("alloy_container", () -> IForgeContainerType.create(alloyContainer::new));
 
     //Tile Entities
-    public static final RegistryObject<TileEntityType<crateContainerTileEntity>> CRATE_TILE_ENTITY = TILE_ENTITY_TYPES.register("crate_tile", () -> TileEntityType.Builder.create(crateContainerTileEntity::new, CRATE.get()).build(null));
+    //public static final RegistryObject<TileEntityType<crateContainerTileEntity>> CRATE_TILE_ENTITY = TILE_ENTITY_TYPES.register("crate_tile", () -> TileEntityType.Builder.create(crateContainerTileEntity::new, CRATE.get()).build(null));
+    //public static final RegistryObject<TileEntityType<alloyContainerTileEntity>> ALLOY_TILE_ENTITY = TILE_ENTITY_TYPES.register("alloy_tile", () -> TileEntityType.Builder.create(alloyContainerTileEntity::new, ALLOY_FURNACE.get()).build(null));
 
     //Tools
     public static final RegistryObject<Item> COPPER_PICKAXE = ITEMS.register("copper_pickaxe", CopperPickaxe::new);

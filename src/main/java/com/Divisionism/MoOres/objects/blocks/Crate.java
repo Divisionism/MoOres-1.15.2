@@ -1,6 +1,6 @@
 package com.Divisionism.MoOres.objects.blocks;
 
-import com.Divisionism.MoOres.tileentity.crateContainerTileEntity;
+//import com.Divisionism.MoOres.tileentity.crateContainerTileEntity;
 import com.Divisionism.MoOres.util.RegistryHandler;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -25,6 +25,7 @@ import net.minecraftforge.fml.network.NetworkHooks;
 
 import java.util.stream.Stream;
 
+/*
 public class Crate extends Block {
 
     private static final VoxelShape CRATE_SHAPE = Stream.of(
@@ -78,3 +79,4 @@ public class Crate extends Block {
         }
     }
 }
+ */

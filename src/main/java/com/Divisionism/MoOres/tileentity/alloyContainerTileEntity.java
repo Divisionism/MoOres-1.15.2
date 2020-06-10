@@ -1,7 +1,7 @@
 package com.Divisionism.MoOres.tileentity;
 
-//import com.Divisionism.MoOres.container.crateContainer;
-//import com.Divisionism.MoOres.objects.blocks.Crate;
+import com.Divisionism.MoOres.blocks.AlloyFurnace;
+//import com.Divisionism.MoOres.container.alloyContainer;
 import com.Divisionism.MoOres.util.RegistryHandler;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -29,20 +29,16 @@ import net.minecraftforge.items.wrapper.InvWrapper;
 import javax.annotation.Nullable;
 
 /*
-public class crateContainerTileEntity extends LockableLootTileEntity {
+public class alloyContainerTileEntity extends LockableLootTileEntity {
 
-    private NonNullList<ItemStack> contents = NonNullList.withSize(18, ItemStack.EMPTY);
+    private NonNullList<ItemStack> contents = NonNullList.withSize(4, ItemStack.EMPTY);
     protected int numPlayersUsing;
     private IItemHandlerModifiable items = createHandler();
     private LazyOptional<IItemHandlerModifiable> itemHandler = LazyOptional.of(() -> items);
 
-    public crateContainerTileEntity(TileEntityType<?> typeIn) {
-        super(typeIn);
-    }
+    public alloyContainerTileEntity(TileEntityType<?> typeIn) { super(typeIn); }
 
-    public crateContainerTileEntity() {
-        this(RegistryHandler.CRATE_TILE_ENTITY.get());
-    }
+    public alloyContainerTileEntity() { this(RegistryHandler.ALLOY_TILE_ENTITY.get()); }
 
     @Override
     public int getSizeInventory() {
@@ -61,12 +57,12 @@ public class crateContainerTileEntity extends LockableLootTileEntity {
 
     @Override
     protected ITextComponent getDefaultName() {
-        return new TranslationTextComponent("container.crate");
+        return new TranslationTextComponent("container.alloy");
     }
 
     @Override
     protected Container createMenu(int id, PlayerInventory player) {
-        return new crateContainer(id, player, this);
+        return new alloyContainer(id, player, this);
     }
 
     @Override
@@ -118,7 +114,7 @@ public class crateContainerTileEntity extends LockableLootTileEntity {
 
     protected void onOpenOrClose() {
         Block block = this.getBlockState().getBlock();
-        if (block instanceof Crate) {
+        if (block instanceof AlloyFurnace) {
             this.world.addBlockEvent(this.pos, block, 1, this.numPlayersUsing);
             this.world.notifyNeighborsOfStateChange(this.pos, block);
         }
@@ -128,14 +124,14 @@ public class crateContainerTileEntity extends LockableLootTileEntity {
         BlockState blockstate = reader.getBlockState(pos);
         if (blockstate.hasTileEntity()) {
             TileEntity tileentity = reader.getTileEntity(pos);
-            if (tileentity instanceof crateContainerTileEntity) {
-                return ((crateContainerTileEntity)tileentity).numPlayersUsing;
+            if (tileentity instanceof alloyContainerTileEntity) {
+                return ((alloyContainerTileEntity)tileentity).numPlayersUsing;
             }
         }
         return 0;
     }
 
-    public static void swapContents(crateContainerTileEntity te, crateContainerTileEntity otherTe) {
+    public static void swapContents(alloyContainerTileEntity te, alloyContainerTileEntity otherTe) {
         NonNullList<ItemStack> list = te.getItems();
         te.setItems(otherTe.getItems());
         otherTe.setItems(list);

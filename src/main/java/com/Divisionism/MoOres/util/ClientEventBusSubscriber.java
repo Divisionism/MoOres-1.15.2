@@ -1,7 +1,8 @@
 package com.Divisionism.MoOres.util;
 
 import com.Divisionism.MoOres.MoOres;
-import com.Divisionism.MoOres.client.gui.CrateScreen;
+//import com.Divisionism.MoOres.client.gui.AlloyScreen;
+//import com.Divisionism.MoOres.client.gui.CrateScreen;
 import net.minecraft.client.gui.ScreenManager;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -13,6 +14,7 @@ public class ClientEventBusSubscriber {
 
     @SubscribeEvent
     public static void clientSetup(FMLClientSetupEvent event) {
-        ScreenManager.registerFactory(ModContainerTypes.CRATE_CONTAINER.get(), CrateScreen::new);
+        //ScreenManager.registerFactory(ModContainerTypes.CRATE_CONTAINER.get(), CrateScreen::new);
+        //ScreenManager.registerFactory(RegistryHandler.ALLOY_CONTAINER.get(), AlloyScreen::new);
     }
 }

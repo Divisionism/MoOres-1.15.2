@@ -1,7 +1,7 @@
 package com.Divisionism.MoOres.client.gui;
 
 import com.Divisionism.MoOres.MoOres;
-//import com.Divisionism.MoOres.container.crateContainer;
+//import com.Divisionism.MoOres.container.alloyContainer;
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.entity.player.PlayerInventory;
@@ -12,11 +12,11 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 
 /*
 @OnlyIn(Dist.CLIENT)
-public class CrateScreen extends ContainerScreen<crateContainer> {
+public class AlloyScreen extends ContainerScreen<alloyContainer> {
 
-    private static final ResourceLocation BACKGROUND_TEXTURE = new ResourceLocation(MoOres.MOD_ID, "textures/gui/crate_screen.png");
+    private static final ResourceLocation BACKGROUND_TEXTURE = new ResourceLocation(MoOres.MOD_ID, "textures/gui/alloy_furnace_screen.png");
 
-    public CrateScreen(crateContainer screenContainer, PlayerInventory inv, ITextComponent titleIn) {
+    public AlloyScreen(alloyContainer screenContainer, PlayerInventory inv, ITextComponent titleIn) {
         super(screenContainer, inv, titleIn);
         this.guiLeft = 0;
         this.guiTop = 0;

@@ -30,7 +30,6 @@ public class MoOres {
 
         RegistryHandler.init();
         BiomeInit.BIOMES.register(modEventBus);
-        ModContainerTypes.CONTAINER_TYPES.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
     }
