@@ -13,11 +13,11 @@ version="1.15.2-0.1.0" #mandatory
 
 displayName="Divisionism's Mo' Ores" #mandatory
 
-updateJSONURL="http://myurl.me/" #optional
+updateJSONURL="" #optional
 
-displayURL="http://example.com/" #optional
+displayURL="" #optional
 
-logoFile="examplemod.png" #optional
+logoFile="" #optional
 
 credits="" #optional
 
