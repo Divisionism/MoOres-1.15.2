@@ -20,6 +20,7 @@ public class ModOreGen {
         ConfiguredPlacement customConfigGenR = Placement.COUNT_RANGE.configure(new CountRangeConfig(5, 10, 0, 25));
         ConfiguredPlacement customConfigGenRR = Placement.COUNT_RANGE.configure(new CountRangeConfig(3, 10, 0, 30));
         ConfiguredPlacement customConfigGenUR = Placement.COUNT_RANGE.configure(new CountRangeConfig(1, 0, 0, 10));
+        ConfiguredPlacement customConfigGenMount = Placement.COUNT_RANGE.configure(new CountRangeConfig(10, 10, 0, 100));
 
         for (Biome biome : ForgeRegistries.BIOMES) {
 
@@ -34,16 +35,17 @@ public class ModOreGen {
             AddOre(biome, customConfigGenUR, RegistryHandler.DIRACIUM_ORE_BLOCK.get(), 1);
 
             if (biome == BiomeInit.WASTELANDS_BIOME.get() || biome == BiomeInit.RED_SAND_DESERT.get()) {
-                // Custom ore gen
+                AddOre(biome, customConfigGenRR, RegistryHandler.FARADIUM_ORE_BLOCK.get(), 3);
+                AddOre(biome, customConfigGenRR, RegistryHandler.DIRACIUM_ORE_BLOCK.get(), 2);
             }
 
             if (biome == BiomeInit.LOL_BIOME.get()) {
-                AddOre(biome, customConfigGenN, RegistryHandler.CRYSTAL_METH_ORE_BLOCK.get(), 15);
+                AddOre(biome, customConfigGenMount, RegistryHandler.CRYSTAL_METH_ORE_BLOCK.get(), 15);
             }
         }
     }
 
-    public static void AddOre(Biome biome, ConfiguredPlacement placement, Block block, int veinSize) {
+    private static void AddOre(Biome biome, ConfiguredPlacement placement, Block block, int veinSize) {
         biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, block.getDefaultState(), veinSize)).withPlacement(placement));
     }
 }
