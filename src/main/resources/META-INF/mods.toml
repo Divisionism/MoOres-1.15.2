@@ -9,13 +9,13 @@ issueTrackerURL="http://my.issue.tracker/" #optional
 
 modId="divisionismmoore" #mandatory
 
-version="1.15.2-0.1.0" #mandatory
+version="1.15.2-0.5.0" #mandatory
 
 displayName="Divisionism's Mo' Ores" #mandatory
 
-updateJSONURL="" #optional
+updateJSONURL="https://google.com" #optional
 
-displayURL="" #optional
+displayURL="https://google.com" #optional
 
 logoFile="" #optional
 
