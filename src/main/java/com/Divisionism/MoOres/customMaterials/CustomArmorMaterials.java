@@ -38,7 +38,7 @@ public enum CustomArmorMaterials implements IArmorMaterial {
     FARADIUM(MoOres.MOD_ID + ":faradium", 100, new int[] { 50, 60, 40, 30}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 100, () -> {
         return Ingredient.fromItems(RegistryHandler.FARADIUM.get());
     }),
-    DIRACIUM(MoOres.MOD_ID + ":diracium", 99999, new int[] { 99999, 99999, 99999, 99999}, 100, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 99999, () -> {
+    DIRACIUM(MoOres.MOD_ID + ":diracium", 999, new int[] { 99999, 99999, 99999, 99999}, 100, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 999, () -> {
         return Ingredient.fromItems(RegistryHandler.DIRACIUM.get());
     });
 

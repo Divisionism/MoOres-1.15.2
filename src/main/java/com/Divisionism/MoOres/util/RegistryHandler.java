@@ -107,6 +107,9 @@ public class RegistryHandler {
     public static final RegistryObject<Item> ALUMINIUM_HOE = ITEMS.register("aluminium_hoe", AluminiumHoe::new);
     public static final RegistryObject<Item> DIRACIUM_SWORD = ITEMS.register("diracium_sword", DiraciumSword::new);
     public static final RegistryObject<Item> DIRACIUM_PICKAXE = ITEMS.register("diracium_pickaxe", DiraciumPickaxe::new);
+    public static final RegistryObject<Item> DIRACIUM_AXE = ITEMS.register("diracium_axe", DiraciumAxe::new);
+    public static final RegistryObject<Item> DIRACIUM_SHOVEL = ITEMS.register("diracium_shovel", DiraciumShovel::new);
+    public static final RegistryObject<Item> DIRACIUM_HOE = ITEMS.register("diracium_hoe", DiraciumHoe::new);
 
     //Armor
     public static final RegistryObject<Item> COPPER_HELMET = ITEMS.register("copper_helmet", CopperHelmet::new);
@@ -121,4 +124,8 @@ public class RegistryHandler {
     public static final RegistryObject<Item> ALUMINIUM_CHESTPLATE = ITEMS.register("aluminium_chestplate", AluminiumChestplate::new);
     public static final RegistryObject<Item> ALUMINIUM_LEGGINGS = ITEMS.register("aluminium_leggings", AluminiumLeggings::new);
     public static final RegistryObject<Item> ALUMINIUM_BOOTS = ITEMS.register("aluminium_boots", AluminiumBoots::new);
+    public static final RegistryObject<Item> DIRACIUM_HELMET = ITEMS.register("diracium_helmet", DiraciumHelmet::new);
+    public static final RegistryObject<Item> DIRACIUM_CHESTPLATE = ITEMS.register("diracium_chestplate", DiraciumChestplate::new);
+    public static final RegistryObject<Item> DIRACIUM_LEGGINGS = ITEMS.register("diracium_leggings", DiraciumLeggings::new);
+    public static final RegistryObject<Item> DIRACIUM_BOOTS = ITEMS.register("diracium_boots", DiraciumBoots::new);
 }
