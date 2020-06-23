@@ -19,7 +19,7 @@ import org.apache.logging.log4j.Logger;
 @Mod.EventBusSubscriber(modid = MoOres.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class MoOres {
 
-    private static final Logger LOGGER = LogManager.getLogger();
+    public static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "divisionismmoore";
 
     public MoOres() {
