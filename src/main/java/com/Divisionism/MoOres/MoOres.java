@@ -2,7 +2,6 @@ package com.Divisionism.MoOres;
 
 import com.Divisionism.MoOres.util.*;
 import com.Divisionism.MoOres.world.gen.ModOreGen;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.world.biome.Biome;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;

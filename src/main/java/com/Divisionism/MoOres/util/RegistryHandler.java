@@ -65,6 +65,7 @@ public class RegistryHandler {
     public static final RegistryObject<Block> FARADIUM_ORE_BLOCK = BLOCKS.register("faradium_ore_block", ORE_PROPERTIES::new);
     public static final RegistryObject<Block> DIRACIUM_ORE_BLOCK = BLOCKS.register("diracium_ore_block", ORE_PROPERTIES::new);
     public static final RegistryObject<Block> ALLOY_FURNACE = BLOCKS.register("alloy_furnace", AlloyFurnace::new);
+    public static final RegistryObject<Block> NETHER_COPPER_ORE_BLOCK = BLOCKS.register("nether_copper_ore_block", ORE_PROPERTIES::new);
 
     //Block Items
     public static final RegistryObject<Item> CRYSTAL_METH_ORE_BLOCK_ITEM = ITEMS.register("crystal_meth_ore_block", () -> new BlockItemBase(CRYSTAL_METH_ORE_BLOCK.get()));
@@ -80,6 +81,7 @@ public class RegistryHandler {
     public static final RegistryObject<Item> FARADIUM_ORE_BLOCK_ITEM = ITEMS.register("faradium_ore_block", () -> new BlockItemBase(FARADIUM_ORE_BLOCK.get()));
     public static final RegistryObject<Item> DIRACIUM_ORE_BLOCK_ITEM = ITEMS.register("diracium_ore_block", () -> new BlockItemBase(DIRACIUM_ORE_BLOCK.get()));
     public static final RegistryObject<Item> ALLOY_FURNACE_BLOCK_ITEM = ITEMS.register("alloy_furnace", () -> new BlockItemBase(ALLOY_FURNACE.get()));
+    public static final RegistryObject<Item> NETHER_COPPER_ORE_BLOCK_ITEM = ITEMS.register("nether_copper_ore_block", () -> new BlockItemBase(NETHER_COPPER_ORE_BLOCK.get()));
 
     //Containers
     //public static RegistryObject<ContainerType<crateContainer>> CRATE_CONTAINER = CONTAINER_TYPES.register("crate_container", () -> IForgeContainerType.create(crateContainer::new));
